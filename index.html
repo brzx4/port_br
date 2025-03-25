@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Programador</title>
+    <style>
+        /* Resetando estilos padrões */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos globais */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f2f2f2; /* Cinza claro */
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #2e2e2e; /* Cinza escuro */
+            color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 40px; /* Aumentei a margem entre os itens */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 1.3em; /* Aumentei o tamanho da fonte */
+            padding: 12px 20px; /* Adicionei padding para aumentar o tamanho do botão */
+            border-radius: 5px; /* Bordas arredondadas */
+            transition: all 0.3s ease; /* Transição suave */
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            background-color: #f39c12; /* Cor de fundo ao passar o mouse */
+            transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+        }
+
+        /* Seção sobre */
+        .section {
+            padding: 80px 40px;
+            text-align: center;
+        }
+
+        .section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: #777;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section .foto img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            margin-top: 30px;
+        }
+
+        /* Seção Projetos */
+        .projeto-lista {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .projeto {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .projeto:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .projeto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .projeto .detalhes {
+            padding: 20px;
+        }
+
+        .projeto h2 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .projeto p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .projeto a {
+            text-decoration: none;
+            color: #f39c12;
+            font-weight: 500;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .projeto a:hover {
+            color: #e67e22;
+            transform: scale(1.1);  /* Aumenta o tamanho em 10% */
+        }
+
+        /* Seção Contato */
+        .contato ul {
+            list-style: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contato ul li {
+            margin: 10px 0;
+        }
+
+        .contato ul li a {
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .contato ul li a:hover {
+            color: #f39c12;
+            transform: scale(1.1);  /* Aumenta o tamanho em 10% */
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #2e2e2e;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .projeto-lista {
+                grid-template-columns: 1fr;
+            }
+
+            .section h1 {
+                font-size: 2em;
+            }
+
+            .section p {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <a href="#">Meu Portfólio</a>
+        </div>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h1>Sobre Mim</h1>
+            <p>Sou um programador apaixonado por tecnologia e desenvolvimento. Com experiência em Java, Python e outras linguagens, busco sempre inovar e otimizar soluções que agreguem valor. Tenho como principal objetivo criar sistemas robustos e eficientes.</p>
+            <div class="">
+                <img src="https://via.placeholder.com/180" alt="Foto de perfil">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="section" style="background-color: #ecf0f1;">
+        <div class="container">
+            <h1>Meus Projetos</h1>
+            <div class="projeto-lista">
+                <div class="projeto">
+                    <img src="https://via.placeholder.com/600x400" alt="Projeto 1">
+                    <div class="detalhes">
+                        <h2>Projeto 1</h2>
+                        <p>Desenvolvimento de um sistema de gerenciamento de estoque utilizando Python e Java.</p>
+                        <a href="#" onclick="alert('Projeto 1 em desenvolvimento!')">Ver mais</a>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="https://via.placeholder.com/600x400" alt="Projeto 2">
+                    <div class="detalhes">
+                        <h2>Projeto 2</h2>
+                        <p>Criação de um site de vendas responsivo e otimizado.</p>
+                        <a href="#" onclick="alert('Projeto 2 em desenvolvimento!')">Ver mais</a>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="https://via.placeholder.com/600x400" alt="Projeto 3">
+                    <div class="detalhes">
+                        <h2>Projeto 3</h2>
+                        <p>Desenvolvimento de um jogo 2D.</p>
+                        <a href="#" onclick="alert('Projeto 3 em desenvolvimento!')">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section">
+        <div class="container">
+            <h1>Contato</h1>
+            <p>Gostou do meu trabalho? Vamos conversar! Envie uma mensagem ou me encontre nas redes sociais.</p>
+            <div class="contato">
+                <ul>
+                    <li><a href="mailto:bruninho2016@gmail.com">bruninho2016@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Portfólio de Programador. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // JavaScript simples para alertas nos links
+        function exibirMensagem(msg) {
+            alert(msg);
+        }
+    </script>
+
+</body>
+</html>
