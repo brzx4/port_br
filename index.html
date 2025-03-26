@@ -15,7 +15,7 @@
         /* Estilos globais */
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f2f2f2; /* Cinza claro */
+            background-color: #f4f6f9; /* Fundo claro */
             color: #333;
             line-height: 1.6;
             font-size: 16px;
@@ -31,7 +31,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 40px;
-            background-color: #2e2e2e; /* Cinza escuro */
+            background-color: #34495e; /* Azul escuro */
             color: #fff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -49,34 +49,34 @@
         }
 
         nav ul li {
-            margin-left: 40px; /* Aumentei a margem entre os itens */
+            margin-left: 40px;
         }
 
         nav ul li a {
             text-decoration: none;
-            color: #ccc;
-            font-size: 1.3em; /* Aumentei o tamanho da fonte */
-            padding: 12px 20px; /* Adicionei padding para aumentar o tamanho do botão */
-            border-radius: 5px; /* Bordas arredondadas */
-            transition: all 0.3s ease; /* Transição suave */
+            color: #bdc3c7;
+            font-size: 1.3em;
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: color 0.3s ease;
         }
 
         nav ul li a:hover {
-            color: #fff;
-            background-color: #f39c12; /* Cor de fundo ao passar o mouse */
-            transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+            color: #f39c12; /* Muda apenas a cor das letras */
         }
 
         /* Seção sobre */
         .section {
             padding: 80px 40px;
             text-align: center;
+            background-color: #ecf0f1;
         }
 
         .section h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
             color: #333;
+            font-weight: 700;
         }
 
         .section p {
@@ -93,6 +93,8 @@
             width: 180px;
             height: 180px;
             margin-top: 30px;
+            border: 4px solid #f39c12;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         /* Seção Projetos */
@@ -125,12 +127,15 @@
 
         .projeto .detalhes {
             padding: 20px;
+            background-color: #fff;
+            border-top: 2px solid #f39c12;
         }
 
         .projeto h2 {
             font-size: 1.8em;
             color: #333;
             margin-bottom: 15px;
+            font-weight: 700;
         }
 
         .projeto p {
@@ -148,7 +153,7 @@
 
         .projeto a:hover {
             color: #e67e22;
-            transform: scale(1.1);  /* Aumenta o tamanho em 10% */
+            transform: scale(1.1);
         }
 
         /* Seção Contato */
@@ -171,12 +176,12 @@
 
         .contato ul li a:hover {
             color: #f39c12;
-            transform: scale(1.1);  /* Aumenta o tamanho em 10% */
+            transform: scale(1.1);
         }
 
         /* Rodapé */
         footer {
-            background-color: #2e2e2e;
+            background-color: #34495e;
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -225,43 +230,39 @@
 
     <!-- Seção Sobre -->
     <section id="sobre" class="section">
-        <div class="container">
-            <h1>Sobre Mim</h1>
-            <p>Sou um programador apaixonado por tecnologia e desenvolvimento. Com experiência em Java, Python e outras linguagens, busco sempre inovar e otimizar soluções que agreguem valor. Tenho como principal objetivo criar sistemas robustos e eficientes.</p>
-            <div class="">
-                <img src="https://via.placeholder.com/180" alt="Foto de perfil">
-            </div>
+        <h1>Sobre Mim</h1>
+        <p>Sou um programador apaixonado por tecnologia e desenvolvimento. Com experiência em Java, Python e outras linguagens, busco sempre inovar e otimizar soluções que agreguem valor. Tenho como principal objetivo criar sistemas robustos e eficientes.</p>
+        <div class="foto">
+            <img src="./img.jpg" alt="Foto de perfil">
         </div>
     </section>
 
     <!-- Seção Projetos -->
     <section id="projetos" class="section" style="background-color: #ecf0f1;">
-        <div class="container">
-            <h1>Meus Projetos</h1>
-            <div class="projeto-lista">
-                <div class="projeto">
-                    <img src="https://via.placeholder.com/600x400" alt="Projeto 1">
-                    <div class="detalhes">
-                        <h2>Projeto 1</h2>
-                        <p>Desenvolvimento de um sistema de gerenciamento de estoque utilizando Python e Java.</p>
-                        <a href="#" onclick="alert('Projeto 1 em desenvolvimento!')">Ver mais</a>
-                    </div>
+        <h1>Meus Projetos</h1>
+        <div class="projeto-lista">
+            <div class="projeto">
+                <img src="https://via.placeholder.com/600x400" alt="Projeto 1">
+                <div class="detalhes">
+                    <h2>Projeto 1</h2>
+                    <p>Desenvolvimento de um sistema de gerenciamento de estoque utilizando Python e Java.</p>
+                    <a href="#" onclick="alert('Projeto 1 em desenvolvimento!')">Ver mais</a>
                 </div>
-                <div class="projeto">
-                    <img src="https://via.placeholder.com/600x400" alt="Projeto 2">
-                    <div class="detalhes">
-                        <h2>Projeto 2</h2>
-                        <p>Criação de um site de vendas responsivo e otimizado.</p>
-                        <a href="#" onclick="alert('Projeto 2 em desenvolvimento!')">Ver mais</a>
-                    </div>
+            </div>
+            <div class="projeto">
+                <img src="https://via.placeholder.com/600x400" alt="Projeto 2">
+                <div class="detalhes">
+                    <h2>Projeto 2</h2>
+                    <p>Criação de um site de vendas responsivo e otimizado.</p>
+                    <a href="#" onclick="alert('Projeto 2 em desenvolvimento!')">Ver mais</a>
                 </div>
-                <div class="projeto">
-                    <img src="https://via.placeholder.com/600x400" alt="Projeto 3">
-                    <div class="detalhes">
-                        <h2>Projeto 3</h2>
-                        <p>Desenvolvimento de um jogo 2D.</p>
-                        <a href="#" onclick="alert('Projeto 3 em desenvolvimento!')">Ver mais</a>
-                    </div>
+            </div>
+            <div class="projeto">
+                <img src="https://via.placeholder.com/600x400" alt="Projeto 3">
+                <div class="detalhes">
+                    <h2>Projeto 3</h2>
+                    <p>Desenvolvimento de um jogo 2D.</p>
+                    <a href="#" onclick="alert('Projeto 3 em desenvolvimento!')">Ver mais</a>
                 </div>
             </div>
         </div>
@@ -269,16 +270,14 @@
 
     <!-- Seção Contato -->
     <section id="contato" class="section">
-        <div class="container">
-            <h1>Contato</h1>
-            <p>Gostou do meu trabalho? Vamos conversar! Envie uma mensagem ou me encontre nas redes sociais.</p>
-            <div class="contato">
-                <ul>
-                    <li><a href="mailto:bruninho2016@gmail.com">bruninho2016@gmail.com</a></li>
-                    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
-                </ul>
-            </div>
+        <h1>Contato</h1>
+        <p>Gostou do meu trabalho? Vamos conversar! Envie uma mensagem ou me encontre nas redes sociais.</p>
+        <div class="contato">
+            <ul>
+                <li><a href="mailto:bruninho2016@gmail.com">bruninho2016@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            </ul>
         </div>
     </section>
 
@@ -288,7 +287,7 @@
     </footer>
 
     <script>
-        // JavaScript simples para alertas nos links
+        // Função de alertas para os links de projetos
         function exibirMensagem(msg) {
             alert(msg);
         }
