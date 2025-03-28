@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -733,9 +734,10 @@
             <h2 class="section-title">Sobre <span>Mim</span></h2>
             <div class="about-content">
                 <div class="about-text fade-in">
-                    <p>Sou Bruno Augusto, Desenvolvedor Full Stack apaixonado por criar experiências digitais escaláveis e inovadoras. Com especialização em Python, React.js e JavaScript, transformo ideias em soluções eficientes, sempre com foco em performance, usabilidade e boas práticas de desenvolvimento.</p>
-                    <p>Minha jornada na programação começou há 5 anos e desde então venho me dedicando a aprimorar minhas habilidades e acompanhar as tendências do mercado. Acredito que a tecnologia deve resolver problemas reais e melhorar a vida das pessoas.</p>
-                    <p>Além do desenvolvimento, tenho experiência em arquitetura de sistemas, gestão de projetos e trabalho em equipe multidisciplinar. Estou sempre aberto a novos desafios e oportunidades de aprendizado.</p>
+                  <p>Sou Bruno Augusto, Desenvolvedor Full Stack com foco em soluções web e apaixonado por tecnologia. Tenho experiência em Python, HTML, CSS e Java, e estou sempre em busca de criar aplicações eficientes e escaláveis.</p>
+                  <p>Minha trajetória na programação começou há alguns anos, e desde então venho me aprofundando em diversas linguagens e frameworks, buscando sempre melhorar minhas habilidades técnicas e manter-me atualizado sobre as tendências do mercado.</p>
+                  <p>Além do desenvolvimento, tenho uma forte capacidade para solucionar problemas de forma criativa, e acredito que a tecnologia deve ser usada para criar soluções práticas que realmente impactem a vida das pessoas de maneira positiva. Estou sempre aberto a novos desafios e projetos inovadores.</p>
+
                     
                     <div class="skills fade-in delay-1">
                         <h3>Tecnologias que domino</h3>
@@ -743,10 +745,10 @@
                             <span><i class="fab fa-html5"></i> HTML5</span>
                             <span><i class="fab fa-css3-alt"></i> CSS3</span>
                             <span><i class="fab fa-js"></i> JavaScript</span>
-                            <span><i class="fab fa-react"></i> React</span>
+                        <!--<span><i class="fab fa-react"></i> React</span> -->
                             <span><i class="fab fa-node-js"></i> Node.js</span>
                             <span><i class="fab fa-python"></i> Python</span>
-                            <span><i class="fas fa-database"></i> MongoDB</span>
+                       <!-- <span><i class="fas fa-database"></i> MongoDB</span> -->
                             <span><i class="fas fa-database"></i> PostgreSQL</span>
                             <span><i class="fab fa-git-alt"></i> Git</span>
                         </div>
@@ -811,187 +813,39 @@
 
     <!-- Seção Contato -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Entre em <span>Contato</span></h2>
-            <form class="contact-form fade-in">
-                <div class="form-group">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" placeholder="Seu nome completo" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="seu@email.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Assunto</label>
-                    <input type="text" id="subject" placeholder="Sobre o que deseja falar?">
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
-                </div>
-                <button type="submit" class="btn">Enviar Mensagem</button>
-            </form>
-            
-            <div class="social-links fade-in delay-1">
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            </div>
+    <div class="container">
+        <h2 class="section-title">Entre em <span>Contato</span></h2>
+        <div class="contact-info fade-in">
+            <p><strong>Nome:</strong> Bruno Augusto</p>
+            <p><strong>E-mail:</strong> brunomotafonseca26@gmail.com</p>
+            <p><strong>Telefone:</strong> (38) 99825-9171</p>
+            <p><strong>Assunto:</strong> Entre em contato para mais informações ou dúvidas.</p>
         </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-links">
-                <a href="#home">Início</a>
-                <a href="#about">Sobre</a>
-                <a href="#projects">Projetos</a>
-                <a href="#contact">Contato</a>
-            </div>
-            <p class="copyright">© 2023 Bruno Augusto. Todos os direitos reservados.</p>
+        
+        <div class="social-links fade-in delay-1">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
-    </footer>
-
-    <!-- Botão Voltar ao Topo -->
-    <div class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
     </div>
+</section>
 
-    <script>
-        // Menu Mobile
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            menuToggle.innerHTML = navLinks.classList.contains('active') ? 
-                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-        
-        // Highlight do menu ativo ao rolar
-        const sections = document.querySelectorAll('section');
-        const navItems = document.querySelectorAll('.nav-links li a');
-        
-        window.addEventListener('scroll', () => {
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                
-                if (pageYOffset >= sectionTop - 300) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.getAttribute('href') === `#${current}`) {
-                    item.classList.add('active');
-                }
-            });
-            
-            // Efeito na navbar ao rolar
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-            
-            // Botão voltar ao topo
-            const backToTop = document.querySelector('.back-to-top');
-            if (window.scrollY > 500) {
-                backToTop.classList.add('active');
-            } else {
-                backToTop.classList.remove('active');
-            }
-        });
-        
-        // Scroll suave para links internos
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Botão voltar ao topo
-        document.querySelector('.back-to-top').addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Animação ao rolar
-        const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.fade-in');
-            
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.2;
-                
-                if (elementPosition < screenPosition) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
-                }
-            });
-        };
-        
-        // Inicializar elementos como invisíveis
-        document.querySelectorAll('.fade-in').forEach(element => {
-            element.style.opacity = '0';
-            element.style.transform = 'translateY(30px)';
-            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        });
-        
-        window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
-        
-        // Formulário de contato
-        const contactForm = document.querySelector('.contact-form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Simulação de envio
-                const formData = new FormData(this);
-                const formValues = Object.fromEntries(formData.entries());
-                console.log('Formulário enviado:', formValues);
-                
-                // Feedback visual
-                const submitButton = this.querySelector('button[type="submit"]');
-                submitButton.innerHTML = '<i class="fas fa-check"></i> Mensagem Enviada';
-                submitButton.style.backgroundColor = '#4CAF50';
-                
-                // Reset após 3 segundos
-                setTimeout(() => {
-                    this.reset();
-                    submitButton.innerHTML = 'Enviar Mensagem';
-                    submitButton.style.backgroundColor = '';
-                }, 3000);
-            });
-        }
-    </script>
-</body>
-</html>
+<!-- Rodapé -->
+<footer>
+    <div class="container footer-content">
+        <div class="footer-links">
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </div>
+        <p class="copyright">© 2025 Bruno Augusto. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<!-- Botão Voltar ao Topo -->
+<div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</div>
