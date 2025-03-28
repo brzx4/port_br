@@ -710,6 +710,33 @@
         </div>
     </nav>
 
+    <!-- Seu conteúdo da página vai aqui -->
+
+    <script>
+        // Variável para armazenar a última posição da rolagem
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+
+        // Evento de rolagem
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Verifica se o usuário rolou para baixo ou para cima
+            if (currentScroll > lastScrollTop) {
+                // Rolou para baixo, esconder a navbar
+                navbar.style.top = '-100px';  // Esconde a navbar
+            } else {
+                // Rolou para cima, mostrar a navbar
+                navbar.style.top = '0';  // Mostra a navbar
+            }
+
+            // Atualiza a última posição da rolagem
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+</body>
+
+    
     <!-- Seção Hero (Home) -->
     <section id="home" class="hero">
         <div class="container">
